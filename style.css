@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*===================================HEADER SECTION STRAT==========================================*/
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: url(images/0.1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+   display: flex;
+   padding: 3% 5%;
+   justify-content: space-between;
+   align-items: center;
+}
+nav h3{
+    color:white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.nav-menu{
+    flex: 1;
+    text-align: right;
+}
+.nav-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 12px;
+    position: relative;
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color:white
+}
+ 
+.nav-menu ul li::after{
+    content: '';
+    width:0px;
+    height:4px;
+    background-color:rgb(148, 143, 143);
+    display: block;
+    margin:auto;
+    position: absolute;
+    bottom: -5px;
+    transition: all 0.6s ease-in-out;
+}
+.nav-menu ul li:hover::after{
+    width:100%;
+}
+ 
+.profile-image{
+    width:30%;
+    position: absolute;
+    top:41%;
+    left:40%;
+    transform: translate(60%, -28%);
+}
+
+
+.title-description{
+    width:90%;
+    color:wheat;
+    position:absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title-description h1{
+    font-size:55px;
+    color:white;
+}
+
+.title-description p{
+    margin:15px 0px 35px;
+    font-size:17px;
+}
+.title-description a{
+    text-decoration: none;
+    color:white;
+    font-size:15px;
+    border:2px solid white;
+    position: relative;
+    padding:10px 30px;   
+}
+.title-description a:hover{
+    background: green;
+    border:2px solid black;
+    transition:all 1.2s ease-in-out;
+}
+
+nav span{
+    display: none;
+}
+
+
+/*===================================HEADER SECTION END==========================================*/
+
+
+/*===================================ABOUT SECTION STRAT==========================================*/
+  
+.about-section{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top:7%;
+}
+.about-section h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    color:#1f2937;
+}
+.img-part{
+  flex-basis: 45%;
+  margin-bottom: 4%;   
+}
+.img-part img{
+    width:50%;
+    height:250px;
+    border-radius: 50%;
+}
+.text-part{
+    flex-basis: 45%;
+    margin-bottom: 4%;  
+}
+
+.text-part h3{
+    font-size: 20px;
+    margin-bottom:15px;
+    text-align: left;
+}
+.text-part p{
+    font-size: 15px;
+    color:#747272;
+    line-height: 20px;
+    padding:12px;
+    text-align: left;
+}
+/*================================= ABOUT SECTION END=======================================*/
+
+/*================================= SKILLS SECTION END=======================================*/
+  
+   .skill-section{
+    width:80%;
+    margin: auto;
+    padding-top: 100px;
+    background-color: #FFF4F5;
+    
+   }
+   .skill-section h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+   }
+.skills-col{
+    flex-basis: 45%;
+    margin-bottom: 4%; 
+    
+}
+
+ .skills-col h2{
+    margin-bottom:15px;
+    text-align: left; 
+    padding:10px;
+ }
+
+ .skills-col p{
+    font-size: 15px;
+    color:#747272;
+    line-height: 20px;
+    padding:15px;
+    text-align: left;
+ }
+ .skills-col li{
+    list-style: none;
+    padding:2px 15px;
+    color:#1f2937;
+ }
+ .skills-col .bar{
+    display: block;
+    height:5px;
+    border: 1px solid #9fa5a4;
+    border-radius:4px;
+    color:#D4DEF2;
+ }
+  .skills-col .bar span{
+    float: left;
+    background:#01382b;
+    height: 4px;
+  }
+  .html{
+    width:90%;
+    animation: html 3s;
+  }
+  .css{
+    width:70%;
+    animation: css 3s;
+  }
+  .javascript{
+    width:60%;
+    animation: javascript 3s;
+  }
+  .jquery{
+    width:50%;
+    animation: jquery 3s;
+   }
+
+  @keyframes html{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:90%;
+    }
+  }
+
+  @keyframes css{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:70%;
+    }
+  }
+  @keyframes javascript{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:60%;
+    }
+  }
+ 
+  @keyframes jquery{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:50%;
+    }
+  }
+
+  
+  
+/*================================= SKILLS SECTION END=======================================*/
+
+
+/*================================= SERVICES SECTION STRAT =====================================*/
+ 
+  .my-services{
+    width:80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.my-services h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+.my-services p{
+    font-size: 15px;
+    color:#747272;
+    line-height: 20px;
+    padding:15px;
+    
+}
+.services-col{
+    flex-basis: 35%;
+    margin-bottom:4%; 
+    justify-content:space-around;
+    background: #FFF4F5;
+    margin-left: 14px;
+}
+.services-col:hover{
+     box-shadow: 0px 0px 20px 00px rgba(0, 0, 0, 0.5);
+     border-radius: 7px;
+}
+.services-col h3{
+    margin-top:25px;
+    padding:10px;
+    font-size:22px;
+     
+}
+  
+/*================================= SERVICES SECTION END ======================================*/
+
+
+/*================================= PORTFOLILYO SECTION STRAT =====================================*/
+
+   .portfoliyo-section{
+    width:80%;
+    margin: auto;
+    padding-top: 20px;
+    background-color: #FFF4F5;
+    text-align: center;
+   }
+   .portfoliyo-section h1{
+     font-size: 30px;
+     font-weight: bold;
+     text-decoration: underline; 
+   }
+
+   .portfoliyo-section p{
+    font-size: 15px;
+    color:#747272;
+    line-height: 20px;
+    padding:10px;
+   }
+   .port-col{
+    flex-basis:32%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    background: #FFF4F5;
+    position:relative;
+    overflow: hidden;
+   }
+   .port-col img{
+    width:100%;
+    padding:10px;
+    display: block;
+   }
+   
+ .overlay{
+    background: transparent;
+    width:100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition: 1.5s;
+ }
+ .overlay:hover{
+    background:rgba(255,0,0,0.3) ;
+ }
+ .overlay h2{
+    width:100%;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 300;
+    color:white;
+    bottom: 0;
+    transform: translateX(-50%); 
+    left:50%;
+    position: absolute;
+    transition: 1.5s;
+ }
+ .overlay:hover h2{
+    bottom:50%;
+ }
+/*================================= PORTFOLILYO SECTION END ======================================*/
+
+
+/*================================= COMMENT SECTION STRAT ======================================*/
+ .comment-section{
+    width:80%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding-top: 20px;
+    text-align: center;
+    
+ }
+
+ .comment-section h1{
+     font-size: 30px;
+     font-weight: bold;
+     text-decoration: underline; 
+ }
+ .comment-section p{
+    font-size: 15px;
+    color:#747272;
+    line-height: 20px;
+    padding:10px;
+ }
+
+ .comment-col {
+    flex-basis:43%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    text-align: left;
+    background: #FFF4F5;
+    padding:25px;
+    cursor: pointer;
+    display: flex;
+    
+ }
+
+ .comment-col img{
+     height: 40px;
+     border-radius: 50%;
+ }
+
+ .comment-col p{
+    padding:0;
+    margin-left: 20px;
+    line-height: 20px;
+     
+ }
+ .comment-col h2{
+    padding:0;
+    margin-left: 20px;
+    line-height: 45px;  
+ }
+/*================================= COMMENT SECTION END ======================================*/
+
+
+/*================================= CELL TO ACTION STRAT ======================================*/
+
+.CELL-TO-ACTION{
+    width:80%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),  url(images/laptop.jpg);
+    text-align: center;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    color:white;
+    padding:100px 00;
+}
+.CELL-TO-ACTION h1{
+   padding:10px;
+   font-size: 30px;
+   font-weight: bold;
+   margin-bottom: 25px;
+}
+
+.CELL-TO-ACTION a{
+   text-decoration: none;
+   color:white;
+   font-size: 18px;
+   border: 2px solid white;
+   padding:7px 15px;
+}
+.CELL-TO-ACTION a:hover{
+    background-color: #038164;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    transition: 1.5s;
+}
+/*================================= CELL TO ACTION END ======================================*/
+
+
+/*================================= FOOTER SECTION STRAT ======================================*/
+
+.footer-section{
+    width:80%;
+    background: rgb(59, 56, 56);
+    margin:auto;
+    color:white;
+    margin-bottom:50px;
+}
+
+.footer-coll{
+    width:100%;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.footer-coll h3{
+    line-height:70px;
+    font-size: 25px;
+    margin-left: 10px;
+    position:relative;
+}
+.footer-coll h3::after{
+    content: '';
+    width:60px;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(189, 119, 119);
+    border-radius: 5px;
+    bottom:14px;
+    left:0;
+}
+ 
+.footer-coll ul li{
+    margin-left:50px;
+    color:black;
+}
+
+.footer-coll ul li a{
+    text-decoration: none;
+    color:white;
+    line-height: 25px;
+    position: relative;
+}
+.footer-coll ul li:hover a{
+    position: absolute;
+    margin-left:8px;
+}
+
+.footer-coll i{
+    margin-left:15px;
+    font-size: 20px;
+    padding:15px;
+    background-color: #1f2937;
+    border-radius: 50%;
+}
+ 
+.copyright {
+    text-align: center; 
+
+}
+.copyright p{
+    line-height: 50px;
+    color:rgb(24, 15, 15);
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 16px;
+}
+/*================================= FOOTER SECTION END ======================================*/
